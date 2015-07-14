@@ -1,0 +1,20 @@
+{
+  "name": "housingApp",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "1.4",
+    "bootstrap": "^3.2.0",
+    "angular-route": "~1.4.2"
+  },
+  "appPath": "app",
+  "moduleName": "housingApp",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+}

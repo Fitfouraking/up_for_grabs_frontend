@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>LOGIN</h2>
+    <p class="lead">Login with your existing Username and Password.</p>
+    <br/>
+  <form class="login">
+    <input class="form-control" type="text" placeholder="Username" ng-model="loginCtrl.login.username"/>
+    <input class="form-control" type="password" placeholder="Password" ng-model="loginCtrl.login.password"/>
+    <br/>
+    <button class="btn btn-primary" type="submit" ng-click="loginCtrl.postLogin()">LOGIN</button>
+  </form>
+</div>

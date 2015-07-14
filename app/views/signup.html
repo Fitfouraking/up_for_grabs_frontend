@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>SIGN UP</h1>
+    <p class="lead">Create an account.</p>
+    <br/>
+  <form class="signup form-group">
+    <input class="form-control" type="text" placeholder="First Name" ng-model="signupCtrl.signup.firstName"/>
+    <input class="form-control" type="text" placeholder="Last Name" ng-model="signupCtrl.signup.lastName"/>
+    <input class="form-control" type="email" placeholder="Email" ng-model="signupCtrl.signup.email"/>
+    <input class="form-control" type="text" placeholder="Username" ng-model="signupCtrl.signup.username"/>
+    <input class="form-control" type="password" placeholder="Password" ng-model="signupCtrl.signup.password"/>
+    <br/>
+    <button class="btn btn-primary" type="submit" ng-click="signupCtrl.postSignup()">REGISTER</button>
+  </form>
+</div>
