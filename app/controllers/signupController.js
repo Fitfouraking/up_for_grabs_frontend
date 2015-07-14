@@ -9,6 +9,7 @@
     this.signup.lastName = undefined;
 
     this.postSignup = function() {
+      // console.log(this.signup);
       if (this.signup.password && this.signup.username) {
         signupFactory.postSignup(this.signup);
       }else {

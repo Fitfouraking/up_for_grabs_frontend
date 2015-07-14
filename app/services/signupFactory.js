@@ -6,11 +6,12 @@
     factory.postSignup = function(data) {
       var url = appSettings.url + "/auth/signup";
       return $http.post(url, data).success(function(res) {
+        console.log(res);
         $location.path('/home');
       }).error(function(err) {
         console.log(err);
       });
-    }
+    };
     return factory;
   };
 

@@ -3,7 +3,7 @@
 
 app.config(function($routeProvider){
     $routeProvider
-      .when('/auth/login',
+      .when('/login',
             {
               controller: 'loginController',
               controllerAs: 'loginCtrl',
@@ -11,7 +11,7 @@ app.config(function($routeProvider){
 
             }
            )
-      .when('/auth/signup',
+      .when('/signup',
             {
               controller: 'signupController',
               controllerAs: 'signupCtrl',
@@ -24,6 +24,14 @@ app.config(function($routeProvider){
               controller: 'userController',
               controllerAs: 'userCtrl',
               templateUrl: 'app/views/home.html',
+
+            }
+           )
+      .when('/',
+            {
+              controller: 'userController',
+              controllerAs: 'userCtrl',
+              templateUrl: 'app/views/welcome.html',
 
             }
            )
