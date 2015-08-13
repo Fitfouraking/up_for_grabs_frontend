@@ -3,6 +3,14 @@
 
 app.config(function($routeProvider){
     $routeProvider
+      .when('/',
+            {
+              controller: 'usersController',
+              controllerAs: 'usersCtrl',
+              templateUrl: 'app/views/welcome.html',
+
+            }
+           )
       .when('/login',
             {
               controller: 'loginController',
@@ -21,17 +29,25 @@ app.config(function($routeProvider){
            )
       .when('/home',
             {
-              controller: 'userController',
-              controllerAs: 'userCtrl',
-              templateUrl: 'app/views/home.html',
+              controller: 'usersController',
+              controllerAs: 'usersCtrl',
+              templateUrl: 'app/views/signupLanding.html',
 
             }
            )
-      .when('/',
+      .when('/listing/new',
             {
-              controller: 'userController',
-              controllerAs: 'userCtrl',
-              templateUrl: 'app/views/welcome.html',
+              controller: 'listingsController',
+              controllerAs: 'listingsCtrl',
+              templateUrl: 'app/views/newListing.html',
+
+            }
+           )
+      .when('/dashboard',
+            {
+              controller: 'listingsController',
+              controllerAs: 'listingsCtrl',
+              templateUrl: 'app/views/dashboard.html',
 
             }
            )

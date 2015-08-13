@@ -16,6 +16,10 @@
         this.message = "Please complete all input fields to register.";
       }
     };
+
+    this.showSignup = function() {
+      $location.path('/home');
+    };
   }
 
   signupController.$inject = ['signupFactory'];

@@ -4,8 +4,8 @@
       <a class="navbar-brand" href="#">UpForGrabs</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Signup</a></li>
-      <li><a href="#">Login</a></li>
+      <li><a href="#/signup">Signup</a></li>
+      <li><a href="#/login">Login</a></li>
     </ul>
   </div>
 </nav>
@@ -13,14 +13,14 @@
 <br/>
 <br/>
 
-<div class="container">
+<div class="container" ng-style="{'background-image':'url(../images/'home.jpg')'}">
   <h1>The best place for your housing needs.</h1>
   <h3>Discover the perfect apartment or post an availability to attract the perfect roommate.</h3>
     <p class="lead">New to UpForGrabs? Create an account today.</p>
-      <button type="button" class="btn btn-lg btn-primary">Signup</button>
+      <a href="#/signup"><button type="submit" class="btn btn-lg btn-primary" ng-click="signupCtrl.showSignup()">Signup</button></a>
       <br/>
       <br/>
       <br/>
     <p class="lead">Welcome back.</p>
-      <button type="button" class="btn btn-lg btn-primary">Login</button>
+      <a href="#/login"><button type="button" class="btn btn-lg btn-primary" ng-click="go('/login')">Login</button></a>
 </div>

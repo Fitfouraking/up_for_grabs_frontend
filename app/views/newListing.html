@@ -1,0 +1,33 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#/home">UpForGrabs</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#/dashboard">Profile</a></li>
+      <li><a href="#/welcome">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+<br/>
+<br/>
+<br/>
+
+<div class="container">
+  <h1>List An Opening.</h1>
+    <p class="lead">Tell us a bit more about the available space and enter the start date.</p>
+    <br/>
+  <form class="signup form-group">
+    <input class="form-control" type="text" placeholder="Address" ng-model="listingsCtrl.listing.address.street"/>
+    <input class="form-control" type="text" placeholder="Apt #, Floor, etc." ng-model="listingsCtrl.listing.address.secondStreet"/>
+    <input class="form-control" type="text" placeholder="City" ng-model="listingsCtrl.listing.address.city"/>
+    <input class="form-control" type="text" placeholder="MA" ng-model="listingsCtrl.listing.address.state"/>
+    <input class="form-control" type="text" placeholder="Zipcode" ng-model="listingsCtrl.listing.address.zipCode"/>
+    <input class="form-control" type="date" placeholder="Start Date" ng-model="listingsCtrl.listing.startDate"/>
+    <input class="form-control" type="currency" placeholder="Monlthy Rent" ng-model="listingsCtrl.listing.price"/>
+    <textarea class="form-control" type="text" rows="3" placeholder="Description (Beds, Baths, Balcony Access, Etc..." ng-model="listingsCtrl.listing.description"></textarea>
+    <br/>
+    <button class="btn btn-primary" type="submit" ng-click="listingsCtrl.postListing()">PUBLISH</button>
+    <a href="#/home"><button class="btn btn-primary" ng-click="userCtrl">CANCEL</button>
+  </form></a>
+</div>

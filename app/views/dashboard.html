@@ -1,0 +1,56 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#/home">UpForGrabs</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#/dashboard">Profile</a></li>
+      <li><a href="#/welcome">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+<br/>
+<br/>
+<br/>
+
+<div class="container">
+  <h1>{{ usersCtrl.user.firstName}}'s Dashboard</h1>
+  <br/>
+
+  <h3>My Listings</h3>
+  <table class="table table-hover">
+    <tr>
+      <th>Address</th>
+      <th>Start Date</th>
+      <th>Monthly Rent</th>
+      <th>Description</th>
+    </tr>
+    <tr ng-repeat="listing in listingsCtrl.listings">
+      <td>{{ listing.address }}</td>
+      <td>{{ listing.startDate | date }}</td>
+      <td>{{ listing.price | currency }}</td>
+      <td>{{ listing.description }}</td>
+    </tr>
+  </table>
+  <br/>
+  <br/>
+
+  <h3>Available Spaces</h3>
+  <table class="table table-hover">
+    <tr>
+      <th>Address</th>
+      <th>Start Date</th>
+      <th>Monthly Rent</th>
+      <th>Description</th>
+    </tr>
+    <tr ng-repeat="listing in listingsCtrl.listings">
+      <td>{{ listing.address }}</td>
+      <td>{{ listing.startDate | date }}</td>
+      <td>{{ listing.price | currency }}</td>
+      <td>{{ listing.description }}</td>
+    </tr>
+  </table>
+
+
+
+</div>
